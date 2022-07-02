@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'iranYekan';
+  src: url('/assets/fonts/IRYekan.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'iranYekan';
+  src: url('/assets/fonts/Qs_Iranyekan\ bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dana';
+  src: url('/assets/fonts/Dana\ Regular\ ttnorm.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url('/assets/fonts/Vazir-Bold.woff') format('woff');
+}
+
+body,
+button {
+  font-family: "iranYekan";
+}
+
+/* body {
+  font-family: 'vazir';
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('/assets/fonts/Vazir.woff') format('woff');
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('/assets/fonts/Vazir-Bold.woff') format('woff');
+} */

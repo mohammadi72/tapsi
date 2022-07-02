@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo tapsi</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <script src="https://kit.fontawesome.com/26513e906a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="nav container"><a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="22" viewBox="0 0 102 22">
+          <g fill-rule="evenodd">
+            <path fill="#000"
+              d="M102 5.946h-3.222v4.28H91.8v-4.28h-3.221v4.28h-5.637a1.878 1.878 0 0 1-1.879-1.872V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873 1.878 1.878 0 0 1-1.879-1.873V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873h-1.879V5.946h-3.22v4.28h-17.18v3.212h3.758v.535c0 2.656-2.167 4.816-4.831 4.816-2.664 0-4.832-2.16-4.832-4.816v-3.746H37.58v3.746c0 4.426 3.613 8.027 8.053 8.027 4.44 0 8.052-3.6 8.052-8.027v-.535H68.985a5.09 5.09 0 0 0 3.489-1.381 5.09 5.09 0 0 0 3.49 1.38 5.09 5.09 0 0 0 3.489-1.38 5.089 5.089 0 0 0 3.489 1.38H102V5.947z">
+            </path>
+            <path fill="#000" d="M84.702 19.297h3.854V22h3.304v-5.946h-7.158zM102 0h-6.561v2.973H102z"></path>
+            <path fill="#FF5B35" d="M26.842 11.297H10.737V5.946h16.105zM26.842 22H0v-5.351h26.842z"></path>
+          </g>
+        </svg>
+      </a>
+      <div class="nav__toggler">
+        <div class="bar bar-one"></div>
+        <div class="bar bar-two"></div>
+        <div class="bar bar-three"></div>
+      </div>
+      <ul class="list nav__list">
+        <li class="nav__item"><a href="#">پشتیبانی</a></li>
+        <li class="nav__item"><a href="#">خدمات کسب و کار ها</a></li>
+        <li class="nav__item"><a href="#">فرصت های شغلی</a></li>
+        <li class="nav__item"><a href="#">وبلاگ</a></li>
+        <li class="nav__item cta">
+          <a href="#" class="btn btn--primary">دانلود تپسی</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- hero section  -->
+  <section class="hero-section">
+    <picture>
+      <source srcset="https://tapsi.ir/images/home/banner.webp" type="image/webp" media="(min-width: 768px)">
+      <source srcset="https://tapsi.ir/images/home/banner.jpg" type="image/jpg" media="(min-width: 768px)">
+      <source srcset="https://tapsi.ir/images/home/banner-mobile.webp" type="image/webp" media="(max-width: 768px)">
+      <source srcset="https://tapsi.ir/images/home/banner-mobile.jpg" type="image/jpg" media="(max-width: 768px)">
+      <img alt="banner" src="https://tapsi.ir/images/home/banner.jpg" class="banner-img">
+    </picture>
+    <div class="hero-wrapper container">
+      <div class="intro-btn">
+        <h1>تپسی</h1>
+        <h2>اپلیکیشن درخواست خودرو و پیک</h2>
+        <div class="intro-wrapper">
+          <div class="intro-btn-passenger style-hero">
+            <span class="icons">
+              <div>
+                <div><i class="fa-solid fa-arrow-down"></i></div>
+              </div>
+            </span>
+            <p>دانلود اپلیکیشن مسافران</p>
+          </div>
+
+          <div class="intro-btn-passenger style-hero">
+            <span class="icons"><i class="fa fa-upload" aria-hidden="true"></i>
+            </span>
+
+            <p>وب اپلیکیشن مسافران</p>
+          </div>
+          <div class="intro-btn-passenger">
+            <span class="icons"><i class="fa-solid fa-arrow-down"></i></span>
+            <p>دانلود اپلیکیشن رانندگان</p>
+          </div>
+          <div class="intro-btn-passenger">
+            <span class="icons">
+              <i class="fa fa-car" aria-hidden="true"></i>
+            </span>
+            <p> ثبت نام راننده </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-phone">
+      <img src="/assets/images/mockup-phone.webp" alt="">
+    </div>
+
+
+  </section>
+  <!-- services -->
+  <section class="services container block">
+    <h2 class="services__title block-heading">سرویس های تپسی</h2>
+    <div class="services__tabs">
+
+      <a class="tab active" data-tab-target="nav-classic-tab">
+        <img src="https://tapsi.ir/images/home/cc-classic.png" aria-label="classic service icon"
+          alt="tapsi-classic-icon">
+        <p>تپسی کلاسیک</p>
+      </a>
+      <a class="tab" data-tab-target="nav-motopeyk-tab">
+        <img src="https://tapsi.ir/images/home/cc-motopeyk.png" aria-label="motopeyk service icon" alt="motopeyk-icon">
+        <p>موتوپیک</p>
+      </a>
+      <a class="tab" data-tab-target="nav-autopeyk-tab">
+        <img src="https://tapsi.ir/images/home/cc-autopeyk.png" aria-label="autopeyk service icon" alt="autopeyk-icon">
+        <p>اتوپیک</p>
+      </a>
+      <a class="tab" data-tab-target="nav-plus-tab">
+        <img src="https://tapsi.ir/images/home/cc-plus.png" aria-label="plus service icon" alt="tapsi-plus-icon">
+        <p>تپسی پلاس</p>
+      </a>
+      <a class="tab active" data-tab-target="nav-tel-tab">
+        <img src="https://tapsi.ir/images/home/cc-tel.png" aria-label="tel service icon" alt="tapsi-tel-icon">
+        <p>تپسی تلفنی</p>
+      </a>
+      <a class="tab" data-tab-target="nav-hamyar-tab">
+        <img src="https://tapsi.ir/images/home/cc-hamyar.png" aria-label="hamyar service icon" alt="hamyar-icon">
+        <p>همیار</p>
+      </a>
+      <a class="tab" data-tab-target="nav-hamkhat-tab" data-toggle="tab" aria-label="hamkhat service button"
+        href="#nav-hamkhat" role="tab" aria-controls="nav-hamkhat" aria-selected="false">
+        <img src="https://tapsi.ir/images/home/cc-hamkhat.png" aria-label="hamkhat service icon" alt="hamkhat-icon">
+        <p>هم&zwnj;خط</p>
+      </a>
+      <a class="tab" data-tab-target="nav-taxi-tab">
+        <img src="https://tapsi.ir/images/home/cc-taxi.png" aria-label="taxi service icon" alt="tapsi-taxi-icon">
+        <p>تاکسی</p>
+      </a>
+      <a class="tab" data-tab-target="nav-line-tab">
+        <img src="https://tapsi.ir/images/home/cc-line.png" aria-label="line service icon" alt="tapsi-line-icon">
+        <p>تپسی لاین</p>
+      </a>
+
+    </div>
+
+
+
+
+    <div class="container">
+      <div class="tab-content active" id="nav-classic-tab">
+        <div class="image__code">
+          <img src="https://tapsi.ir/images/home/illus-classic.webp">
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">تپسی کلاسیک</h3>
+          <p class="feature__text">با سرویس کلاسیک تپسی، یک خودروی اختصاصی برای رسیدن به مقصدتان دارید. تپسی
+            کلاسیک،
+            راهی سریع و آسان برای سفرهای درون‌شهری در هر ساعتی از روز است. در این سرویس، شما امکان تعیین دو یا
+            چند مقصد
+            و همچنین توقف در مسیر را دارید.
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-motopeyk-tab">
+        <div class="image__code">
+          <img src="https://tapsi.ir/images/home/illus-motopeyk.webp">
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">موتو پیک</h3>
+          <p class="feature__text">با استفاده از سرویس موتوپیک، بسته‌ها و مرسولاتتان با پیک موتور به مقصد ارسال
+            می‌شوند.
+            این سرویس مناسب زمانی است که می‌خواهید مرسوله سریع‌تر به مقصد برسد. در این سرویس، شما می‌توانید مسیر
+            رسیدن
+            مرسوله‌تان به مقصد را به صورت لحظه‌ای روی نقشه دنبال کنید.
+          </p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-autopeyk-tab">
+        <div class="image__code">
+          <img src="https://tapsi.ir/images/home/illus-autopeyk.webp">
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">اتوپیک</h3>
+          <p class="feature__text">اتوپیک سرویسی برای ارسال بسته‌های شما با خودرو است. این سرویس، برای زمانی مناسب
+            است
+            که بسته‌های شما، با موتور قابل ارسال نیستند و یا در حین جابجایی، نیاز به مراقبت بیشتری دارند. در این
+            سرویس
+            نیز امکان رصد لحظه ‌به لحظه موقعیت مکانی مرسوله تا زمان رسیدن به مقصد فراهم است.
+          </p>
+        </div>
+      </div>
+
+      <div class="tab-content" id="nav-plus-tab">
+        <div class="image__code">
+          <img src="https://tapsi.ir/images/home/illus-plus.webp">
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">تپسی پلاس</h3>
+          <p class="feature__text">در سرویس پلاس تاکسی اینترنتی تپسی، خودرویی با مدل بالاتر و عمر کمتر، به دنبال
+            شما
+            خواهد آمد. همچنین، رانندگان این سرویس بالاترین امتیاز را از مسافران دریافت کرده‌اند. در این سرویس که
+            در
+            حال حاضر در تهران فعال است، امکان تعیین چند مقصد یا توقف در حین سفر، وجود دارد.</p>
+        </div>
+      </div>
+
+      <div class="tab-content" id="nav-tel-tab">
+        <div class="image__code">
+          <img src="https://tapsi.ir/images/home/illus-tel.webp">
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">تپسی تلفنی</h3>
+          <p class="feature__text">سرویس تپسی تلفنی یا ۱۶۳۰، این امکان را به شما می‌دهد که بدون نیاز به اینترنت و
+            اپلیکیشن، درخواست خودرو بدهید. این سرویس تاکسی تلفنی مناسب زمانی است که به هر دلیلی دسترسی به
+            اینترنت یا
+            اپلیکیشن ندارید. همچنین سرویس تلفنی تپسی، راه حلی مناسب برای افرادی است که کار کردن با اپلیکیشن‌های
+            موبایلی
+            برایشان راحت نیست.</p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-hamyar-tab">
+        <div class="image__code">
+          <img src="https://tapsi.ir/images/home/illus-hamyar.webp">
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">همیار</h3>
+          <p class="feature__text">سرویس همیار تپسی، به جای شما خرید می‌کند. کافیست فروشگاه مورد نظر خود را به
+            عنوان
+            مبدا مشخص کرده و لیست خریدتان را داخل اپ وارد کنید. این خرید‌ها می‌تواند از سوپرمارکت یا داروخانه
+            مورد نظر
+            شما باشند.</p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-hamkhat-tab">
+        <div class="image__code">
+          <img src="https://tapsi.ir/images/home/illus-hamkhat.webp">
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">هم خط</h3>
+          <p class="feature__text">سرویس هم‌خط تپسی شما را با مینی‌بوس‌ به مقصد می‌رساند. با استفاده از سرویس
+            هم‌خط بعد
+            از انتخاب مسیر سفر، بلیت‌تان را خریداری کنید و سریع‌تر و راحت‌تر به مقصد برسید. این سرویس خطی بسیار
+            ارزان‌تر
+            از دیگر سرویس‌های تپسی است و شما را سریع‌تر و راحت‌تر از حمل‌ونقل عمومی به مقصدتان می‌رساند. شما
+            می‌توانید
+            از قبل بلیت هم خط را رزرو کنید و با رعایت فاصله اجتماعی به مقصد برسید. سرویس مینی بوس آنلاین فعلا
+            فقط در
+            تهران فعال است.</p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-taxi-tab">
+        <div class="image__code">
+          <img src="https://tapsi.ir/images/home/illus-taxi.webp">
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">تپسی تاکسی</h3>
+          <p class="feature__text">در سرویس تاکسی تپسی، تاکسی‌های زرد یا سبز شما را به مقصدتان می‌رسانند. این
+            سرویس در
+            حال حاضر در تهران فعال است و چنانچه به دلایلی مانند ورود به محدوده طرح ترافیک یا طرح آلودگی هوا،
+            ترجیح بدهید
+            از تاکسی برای رفت‌وآمدتان استفاده کنید، گزینه مناسبی خواهد بود.</p>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-line-tab">
+        <div class="image__code">
+          <img src="https://tapsi.ir/images/home/illus-line.webp">
+        </div>
+        <div class="feature__detail">
+          <h3 class="feature__title">تپسی لاین</h3>
+          <p class="feature__text">تپسی لاین سرویسی است که امکان سفر اشتراکی را برایتان فراهم می‌کند. در این سرویس
+            شما
+            با مسافر دیگری که هم‌مسیرتان است، هم‌سفر خواهید بود و هزینه سفرتان تقسیم می‌شود. این سرویس در حال
+            حاضر به
+            دلیل شرایط همه‌گیری بیماری کرونا از دسترس خارج شده اما با بهبود شرایط می‌توانید از سرویس لاین
+            استفاده کنید.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- feature -->
+  <section class="feature container block">
+    <div class="feature__image" style=" height: auto;">
+      <img class="" src="/assets/images/i-mac.webp" alt="خدمات تپسی برای کسب و کار ها">
+    </div>
+    <div class="feature__detail" style=" height:auto">
+      <h2 class="feature__title">خدمات تپسی برای کسب و کار ها</h2>
+      <p class="feature__text">پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم‌زمان تعداد نامحدودی
+        خودرو و پیک را برای کسب‌وکارها و سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری
+        و
+        ارسال کالاهای خود را به سادگی مدیریت کنید.</p>
+      <button class="btn btn--primary">ورود و ثبت نام پنل سازمانی</button>
+    </div>
+  </section>
+
+  <section class="feature container block">
+    <div class="image__code" style=" height: auto;">
+      <img class="" src="/assets/images/macbook.webp" alt="خرید کد اعتبار تپسی">
+    </div>
+    <div class="feature__detail" style=" height:auto">
+      <h2 class="feature__title">خرید کد اعتبار تپسی</h2>
+      <p class="feature__text">کاربران، کسب‌وکارها و سازمان‌ها می‌توانند به تعداد و مبلغ مورد نظرشان، کد اعتبار یا کد
+        تخفیف تپسی تهیه کرده، برای خود، پرسنل و یا مشتریانشان استفاده کنند و از تخفیف‌های ویژه تپسی نیز بهره‌مند
+        شوند.
+        این کدها امکان سفارشی‌سازی بر اساس مبدا، مقصد، زمان، درصد و مبلغ را دارند.</p>
+      <button class="btn btn--primary">خرید کد و اعتبار تخفیف</button>
+    </div>
+
+  </section>
+  <!-- card   -->
+  <section class="plan-out container block">
+    <div>
+
+      <h2>پلن های رزو تاکسی</h2>
+    </div>
+
+    <section class="block-plan">
+      <div class="plan">
+        <div class="card">
+          <header class="card__header">
+            <span class="plan__introduction">
+              <span class="plan__name">عادی</span>
+              <span class="badge ">10% off</span>
+            </span>
+            <span class="plan__price">290,000</span>
+            <span class="plan__billing-cycle">ماهانه/تومان</span>
+            <span class="plan__description">سرویس ماشین های معمولی</span>
+          </header>
+          <div class="card__body">
+            <li class="list list--tick">
+              <ul class="list__items">کیفیت معمولی</ul>
+              <ul class="list__items">کیفیت معمولی</ul>
+              <ul class="list__items">کیفیت معمولی</ul>
+              <ul class="list__items">کیفیت معمولی</ul>
+
+            </li>
+            <button class="btn btn--secondary btn--block">ثبت سفارش</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="plan plan--popular">
+        <div class="card card--primary">
+          <header class="card__header">
+            <span class="plan__introduction">
+              <span class="plan__name">اقتصادی</span>
+              <span class="badge badge--primary">15% off</span>
+            </span>
+            <span class="plan__price">390,000</span>
+            <span class="plan__billing-cycle">ماهانه/تومان</span>
+            <span class="plan__description">سرویس ماشین های اقتصادی</span>
+          </header>
+          <div class="card__body">
+            <li class="list list--tick">
+              <ul class="list__items">کیفیت معمولی</ul>
+              <ul class="list__items">کیفیت معمولی</ul>
+              <ul class="list__items">کیفیت معمولی</ul>
+              <ul class="list__items">کیفیت معمولی</ul>
+
+            </li>
+            <button class="btn btn--primary btn--block">ثبت سفارش</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan">
+        <div class="card">
+          <header class="card__header">
+            <span class="plan__introduction">
+              <span class="plan__name">ویژه</span>
+              <span class="badge ">20% off</span>
+            </span>
+            <span class="plan__price">490,000</span>
+            <span class="plan__billing-cycle">ماهانه/تومان</span>
+            <span class="plan__description">سرویس ماشین های مدل بالا</span>
+          </header>
+          <div class="card__body">
+            <li class="list list--tick">
+              <ul class="list__items">کیفیت خیلی خفن</ul>
+              <ul class="list__items">بی سر و صدا </ul>
+              <ul class="list__items">زمان نا محدود </ul>
+              <ul class="list__items">سرویس نا محدود </ul>
+
+            </li>
+            <button class="btn btn--secondary btn--block">ثبت سفارش</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!-- contact us -->
+  <section class="contact-content container block">
+    <div class="contact__title block-heading">
+      <h2>ارتباط با ما</h2>
+      <h3>شما میتوانید نظرات و انتقادات خود را برای ما بفرستید.</h3>
+    </div>
+    <div class="contact-us">
+      <!-- social icon -->
+      <div class="contact-us__social">
+        <div class="social-holder">
+          <span class="social-container">
+            <svg class="icon">
+              <use xlink:href="/assets/images/svg-sprite.svg#linkedin"></use>
+            </svg>
+          </span>
+          <span class="social-container">
+            <svg class="icon">
+              <use xlink:href="/assets/images/svg-sprite.svg#facebook"></use>
+            </svg>
+          </span>
+          <span class="social-container">
+            <svg class="icon">
+              <use xlink:href="/assets/images/svg-sprite.svg#twitter"></use>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <!-- icon -->
+      <div class="contact-us__icon">
+        <div class="icon-holder">
+
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="/assets/images/svg-sprite.svg#mail"></use>
+            </svg>
+          </span>
+          <p class="icon-holder__label">zahramohammadi7294@gmail.com</p>
+        </div>
+        <div class="icon-holder">
+
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="/assets/images/svg-sprite.svg#smartphone"></use>
+            </svg>
+          </span>
+          <p class="icon-holder__label">09197353163</p>
+        </div>
+        <div class="icon-holder">
+
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="/assets/images/svg-sprite.svg#map-pin"></use>
+            </svg>
+          </span>
+          <p class="icon-holder__label"> استان تهران، تهران، ارکیده،</p>
+        </div>
+
+
+      </div>
+      <!-- map -->
+      <div class="contact-us__map" style=" height:auto"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.484337588657!2d51.377674385085754!3d35.78804128016944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dfdb6f2570799%3A0xe4116f5517d2ab14!2z2LTYsdqp2Kog2KrZvtiz24w!5e0!3m2!1sfa!2sro!4v1653918043566!5m2!1sfa!2sro"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- form -->
+      <div class="contact-us__form">
+        <div class="form-wrapper">
+          <h3>نظرات شما</h3>
+          <form>
+            <input type="text" placeholder="Your Name" dir="ltr">
+            <input type="email" placeholder="Your Email" dir="ltr">
+            <textarea name="" id="" cols="30" rows="10" dir="ltr" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn--primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- travelling -->
+  <div class="container travell block">
+    <div class="travell__slides">
+      <div class="travell__slide">
+        <div class="slide__image"><img src="/assets/images/travell.jpg" alt=""></div>
+        <div class="slide__detail">
+          <div class="slide__header">
+            <span class="badge badge--primary">ویژه</span>
+            <p>اقامت رایگان &bull; سفر سه روزه</p>
+          </div>
+          <p class="slide__title">سفر به قلب کویر لوت</p>
+          <div class="slide__icons">
+            <div class=" icons__1">
+              <i class="fa-solid fa-heart"></i>
+              <span>12</span>
+              <i class="fa-regular fa-eye"></i>
+              <span>23</span>
+
+            </div>
+            <div>
+              <i class="fa-solid fa-pen-to-square"></i>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+          <div class="avatar-group">
+            <div class="avatar">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXI4fZ9UqyBe2XVZYXKpakd2VxCHJCdPTlsg&usqp=CAU"
+                alt="">
+            </div>
+            <div class="avatar"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTrf5-G86R9iLt7Ed_BypYRuGtUGtSwmwuw&usqp=CAU"
+                alt=""></div>
+            <div class="avatar"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDuYvCGWxVfkMAbQBtCGLC-YcuoZg3HVIBQA&usqp=CAU"
+                alt=""></div>
+            <div class="avatar"><img
+                src="https://mag.noorgram.ir/wp-content/uploads/2021/02/%D8%B9%DA%A9%D8%B3-%D8%AF%D8%AE%D8%AA%D8%B1-%D8%A8%D8%A7-%D8%AD%D8%AC%D8%A7%D8%A8-1-720x500.jpg"
+                alt=""></div>
+
+            <div class="avatar"><img
+                src="data:image/jpeg;base64,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"
+                alt=""></div>
+            <div class=" avatar-hidden">10+</div>
+            <span class="slide__suggest">پیشنهاد</span>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="travell__slide">
+        <div class="slide__image"><img src="/assets/images/northOfIran.jpg" alt=""></div>
+        <div class="slide__detail">
+          <div class="slide__header">
+            <span class="badge badge--primary">ویژه</span>
+            <p>اقامت رایگان &bull; سفر سه روزه</p>
+          </div>
+          <p class="slide__title">سفر به شمال ایران</p>
+          <div class="slide__icons">
+            <div class="icons__1">
+              <i class="fa-solid fa-heart"></i> <span>12</span>
+              <i class="fa-regular fa-eye"></i>
+              <span>23</span>
+
+            </div>
+            <div>
+              <i class="fa-solid fa-pen-to-square"></i>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+
+          </div>
+          <div class="avatar-group">
+            <div class="avatar">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXI4fZ9UqyBe2XVZYXKpakd2VxCHJCdPTlsg&usqp=CAU"
+                alt="">
+            </div>
+            <div class="avatar"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTrf5-G86R9iLt7Ed_BypYRuGtUGtSwmwuw&usqp=CAU"
+                alt=""></div>
+            <div class="avatar"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDuYvCGWxVfkMAbQBtCGLC-YcuoZg3HVIBQA&usqp=CAU"
+                alt=""></div>
+            <div class="avatar"><img
+                src="https://mag.noorgram.ir/wp-content/uploads/2021/02/%D8%B9%DA%A9%D8%B3-%D8%AF%D8%AE%D8%AA%D8%B1-%D8%A8%D8%A7-%D8%AD%D8%AC%D8%A7%D8%A8-1-720x500.jpg"
+                alt=""></div>
+
+            <div class="avatar"><img
+                src="data:image/jpeg;base64,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"
+                alt=""></div>
+            <div class=" avatar-hidden">10+</div>
+            <span class="slide__suggest">پیشنهاد</span>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="travell__slide">
+        <div class="slide__image"><img src="/assets/images/mashhad.jpeg" alt=""></div>
+        <div class="slide__detail">
+          <div class="slide__header">
+            <span class="badge badge--primary">ویژه</span>
+            <p>اقامت رایگان &bull; سفر سه روزه</p>
+          </div>
+          <p class="slide__title">سفربه مشهد مقدس</p>
+          <div class="slide__icons">
+            <div class="icons__1">
+              <i class="fa-solid fa-heart"></i> <span>12</span>
+              <i class="fa-regular fa-eye"></i>
+              <span>23</span>
+
+            </div>
+            <div>
+              <i class="fa-solid fa-pen-to-square"></i>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+          <div class="avatar-group">
+            <div class="avatar">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXI4fZ9UqyBe2XVZYXKpakd2VxCHJCdPTlsg&usqp=CAU"
+                alt="">
+            </div>
+            <div class="avatar"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTrf5-G86R9iLt7Ed_BypYRuGtUGtSwmwuw&usqp=CAU"
+                alt=""></div>
+            <div class="avatar"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDuYvCGWxVfkMAbQBtCGLC-YcuoZg3HVIBQA&usqp=CAU"
+                alt=""></div>
+            <div class="avatar"><img
+                src="https://mag.noorgram.ir/wp-content/uploads/2021/02/%D8%B9%DA%A9%D8%B3-%D8%AF%D8%AE%D8%AA%D8%B1-%D8%A8%D8%A7-%D8%AD%D8%AC%D8%A7%D8%A8-1-720x500.jpg"
+                alt=""></div>
+
+            <div class="avatar"><img
+                src="data:image/jpeg;base64,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"
+                alt=""></div>
+            <div class=" avatar-hidden">10+</div>
+            <span class="slide__suggest">پیشنهاد</span>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- 
+            <div class="travell__slide">
+            <div class="slide__image"><img src="/assets/images/southOfIran.jpeg" alt=""></div>
+            <div class="slide__detail">
+                <div class="slide__header">
+                    <span class="badge badge--primary">ویژه</span>
+                    <p>اقامت رایگان &bull; سفر سه روزه</p>
+                </div>
+                <p class="slide__title">سفربه جنوب ایران</p>
+                <div class="slide__icons">
+                    <div class="icons__1">
+                        <i class="fa-solid fa-heart"></i> <span>20</span>
+                        <i class="fa-regular fa-eye"></i>
+                        <span>37</span>
+
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+                 <div class="avatar-group">
+                    <div class="avatar">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXI4fZ9UqyBe2XVZYXKpakd2VxCHJCdPTlsg&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div class="avatar"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTrf5-G86R9iLt7Ed_BypYRuGtUGtSwmwuw&usqp=CAU"
+                            alt=""></div>
+                    <div class="avatar"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDuYvCGWxVfkMAbQBtCGLC-YcuoZg3HVIBQA&usqp=CAU"
+                            alt=""></div>
+                    <div class="avatar"><img
+                            src="https://mag.noorgram.ir/wp-content/uploads/2021/02/%D8%B9%DA%A9%D8%B3-%D8%AF%D8%AE%D8%AA%D8%B1-%D8%A8%D8%A7-%D8%AD%D8%AC%D8%A7%D8%A8-1-720x500.jpg"
+                            alt=""></div>
+
+                    <div class="avatar"><img
+                            src="data:image/jpeg;base64,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"
+                            alt=""></div>
+                    <div class=" avatar-hidden">10+</div>
+                    <span class="slide__suggest">پیشنهاد</span>
+
+                </div>
+            </div></div> 
+        -->
+    </div>
+  </div>
+  <!-- footer -->
+
+  <footer class="main-footer">
+    <div class="container footer">
+      <div class="part-footer">
+        <div class="footer__item  footer__logo">
+          <img src="/assets/images/tapsi-logo-white.svg" alt="">
+          <h4>اپلیکیشن درخواست خودرو و پیک</h4>
+          <p>تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است.</p>
+
+        </div>
+        <div class="footer__item">
+          <h6>تپسی</h6>
+          <a href="#">وبلاگ تپسی</a>
+          <a href="#">فرصت شغلی</a>
+          <a href="#">تماس با ما</a>
+          <a href="#">لوگو و هویت سازمانی</a>
+          <a href="#">معرفی راننده به تپسی</a>
+        </div>
+        <div class="footer__item">
+          <h6>مسافران</h6>
+          <a href="#">دانلود اپ مسافر</a>
+          <a href="#">نسخه وب تپسی</a>
+          <a href="#">پرسش های متداول مسافران</a>
+          <a href="#">شرایط وقوانین مسافران</a>
+          <a href="#">باشگاه مشتریان</a>
+        </div>
+        <div class="footer__item">
+          <h6>رانندگان</h6>
+          <a href="#">دانلود اپ سفیر</a>
+          <a href="#">ثبت نام راننده تاکسی اینترنتی</a>
+          <a href="#">پرسش های متداول سفیران</a>
+          <a href="#">شرایط و قوانین سفیران</a>
+          <a href="#">باشگاه سفیران</a>
+        </div>
+        <div class="footer__item">
+          <h6>کسب و کار ها</h6>
+          <a href="#">پنل سازمانی تپسی</a>
+          <a href="#">خرید کد اعتبار و تخفیف</a>
+          <a href="#">دریافت API</a>
+        </div>
+        <div class="footer__item enemad">
+          <div class="footer__enemad"><img src="/assets/images/etehadiye.png" alt=""></div>
+          <div class="footer__enemad"><img src="/assets/images/logo.png" alt=""></div>
+          <div class="footer__enemad"><img src="/assets/images/logo (1).png" alt=""></div>
+
+        </div>
+      </div>
+      <div class=" footer-social">
+        <p>تپسی در شبکه های اجتماعی</p>
+        <div class="footer__icon">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-telegram" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
